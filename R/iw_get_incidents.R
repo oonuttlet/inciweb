@@ -23,6 +23,7 @@ iw_get_incidents <- function(geometry = TRUE) {
     dplyr::select(!c(
       dplyr::ends_with(c("deg", "min", "sec")),
       "urlPath",
+      "changed",
       "field_percent_of_perimeter",
       "field_active"
     )) |>
