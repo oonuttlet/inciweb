@@ -3,6 +3,7 @@ requireNamespace("dplyr")
 requireNamespace("stringr")
 requireNamespace("sf")
 
+#' @export
 iw_get_incidents <- function(geometry = TRUE) {
   url <- url("https://inciweb.wildfire.gov/api/map_data")
   res <- jsonlite::fromJSON(url)
