@@ -54,7 +54,9 @@ The returned object includes all information available in the most
 recent update of the Inciweb database.
 
 By default, `iw_get_incidents()` returns an `sf` object. This behavior
-can be changed using the argument `geometry = FALSE`.
+can be changed using the argument `geometry = FALSE`. In this case,
+latitude and longitude columns are still returned; conversion to `sf`
+object is omitted.
 
 ``` r
 foo <- iw_get_incidents()
